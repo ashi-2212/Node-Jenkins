@@ -8,7 +8,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello Ashi\n');
+  res.end('Hello Ashi...\n');
 });
 
 // Listen on port 3000 and IP 127.0.0.1.
