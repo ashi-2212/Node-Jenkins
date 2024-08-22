@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
-                sh 'node app.js &'  // Run the application in the background
+                sh 'node index.js &'  // Run the application in the background
             }
         }
         stage('Verify Application') {
