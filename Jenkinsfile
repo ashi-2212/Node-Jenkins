@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo 'Cloning repository...'
-                git 'https://github.com/ashi-2212/Node-Jenkins.git'
+                git 'https://github.com/ashi-2212/Node-Jenkins-sample.git'
             }
         }
         stage('Install Dependencies') {
@@ -23,7 +23,7 @@ pipeline {
         stage('Verify Application') {
             steps {
                 echo 'Verifying application...'
-                sh 'curl http://16.171.153.18:3000'  
+                sh 'curl http://16.171.233.245:3000'  
             }
         }
     }
